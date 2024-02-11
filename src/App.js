@@ -1,6 +1,5 @@
 import "./App.css";
-import "./components/ExpenseItem";
-import ExpenseItem from "./components/ExpenseItem";
+import ExpenseItemsList from "./components/ExpenseListCOmponent/ExpenseItemsList";
 
 function App() {
   const expenses = [
@@ -29,11 +28,7 @@ function App() {
     <div>
       <header className="App-header">
         <h2>Let's Start</h2>
-               <ExpenseItem expense={expenses[0]}></ExpenseItem>
-               <ExpenseItem expense={expenses[1]}></ExpenseItem>
-               <ExpenseItem expense={expenses[2]}></ExpenseItem>
-               <ExpenseItem expense={expenses[3]}></ExpenseItem>
-
+          <ExpenseItemsList expenses={expenses} />
       </header>
     </div>
   );
